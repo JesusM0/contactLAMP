@@ -1,6 +1,6 @@
 # Contact Hub
 
-Utilizing the tech stack LAMP, my team and I created a CRUD-based contact manager, with a pokemon theme for fun.
+Utilizing the LAMP tech stack, my team and I created a CRUD-based contact manager, with a pokemon theme for fun.
 We divided the work into different roles. My role was that of Database Manager, and API developer.
 
 ## Original Repo
