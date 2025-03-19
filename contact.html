@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="css/images/pokemon-go.png">
+    <meta charset="UTF-8"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Pokedex Manager</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- linking css-->
+    <script>
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="css/images/logo.png" alt="Logo" class="logo">
+            <h1>Pokedex Manager</h1>
+            <div class="header-buttons">
+                <button id="logoutButton" class="primary-button" onclick="logout()">Logout</button>
+            </div>
+        </header>
+        
+        <!-- search container with both buttons -->
+        <div id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Search contacts...">
+            <button id="searchButton" class="primary-button" onclick="searchContact()">Search</button>
+            <button id="resetButton" class="primary-button" onclick="resetSearch()">Reset</button>
+        </div>
+        <!-- Table Sect -->
+        <section id="contactTableSection">
+            <div class="table-header">
+                <h2>Your Contacts</h2>
+            </div>
+            <table id="contactsTable">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="contactsTableBody">
+                    <tr id="newContactRow">
+                        <td><input type="text" id="newFirstName" placeholder="First Name"></td>
+                        <td><input type="text" id="newLastName" placeholder="Last Name"></td>
+                        <td><input type="tel" id="newPhone" placeholder="Phone Number"></td>
+                        <td><input type="email" id="newEmail" placeholder="Email"></td>
+                        <td>
+                            <button class="primary-button" id="addContactBtn" onclick="addContact()">Add Contact</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div id="errorContainer" style="display: none; color: red; margin-bottom: 10px;"></div>
+    </div>
+    <script src="js/contactScript.js"></script>
+    
+    <img src="css/images/ash.png" alt="ash" class="bottom-right-image">
+    <img src="css/images/gasping-pikachu3.png" alt="pika" class="bottom-left-image">
+</body>
+</html>
